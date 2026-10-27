@@ -9,5 +9,5 @@ export default defineConfig({
     tailwindcss(),
     babel({ presets: [reactCompilerPreset()] })
   ],
-  base:'/online-quiz-application'
+  base:'/online-quiz-application/'
 })
