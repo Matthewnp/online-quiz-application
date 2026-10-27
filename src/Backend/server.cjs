@@ -10,9 +10,7 @@ app.use(cors({
   credentials:true
 }))
 // routes
-app.get('/', ( res) => {
-  res.send('Backend is running!');
-});
+
 // Create a new quiz
 app.post('/api/quizzes', (req, res) => {
   const { title } = req.body;
