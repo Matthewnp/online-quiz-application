@@ -1,6 +1,6 @@
 // pages/CreateQuiz.jsx
 import { useState } from 'react';
-import { api } from '../../Backend/api';
+import { api } from '../Backend/api';
 
 const emptyQuestion = {
   question_text: '',

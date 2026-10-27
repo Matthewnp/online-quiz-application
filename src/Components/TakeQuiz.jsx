@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router';
-import { api } from '../../Backend/api';
+import { api } from '../Backend/api';
 import ProgressBar from './ProgressBar';
 import QuestionCard from './QuestionCard';
 
