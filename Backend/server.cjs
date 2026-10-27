@@ -5,10 +5,14 @@ const cors=require('cors')
 app.use(express.json());
 
 app.use(cors({
-  origin:['http://localhost:5173','http://localhost:5000'],
+  origin:['http://localhost:5173'],
   methods:["POST",'GET','PUT','DELETE'],
   credentials:true
 }))
+// routes
+app.get('/', ( res) => {
+  res.send('Backend is running!');
+});
 // Create a new quiz
 app.post('/api/quizzes', (req, res) => {
   const { title } = req.body;
@@ -64,6 +68,7 @@ app.post('/api/quizzes/:id/submit', (req, res) => {
   const score = total ? Math.round((correct / total) * 100) : 0;
   res.json({ score, correct, total, review });
 });
+
 
 // Start server — OUTSIDE all routes
 app.listen(5000, () => console.log('Server running on http://localhost:5000'));
