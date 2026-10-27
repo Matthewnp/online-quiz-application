@@ -1,7 +1,7 @@
 import {  Routes, Route } from 'react-router';
 import CreateQuiz from './Components/CreateQuiz';
 import TakeQuiz from './Components/TakeQuiz';
-import Result from "./Components/result"
+import Result from "./Components/Result"
 
 export default function App() {
   return (
